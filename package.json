@@ -1,0 +1,43 @@
+{
+  "name": "react-vite-tailwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "node -e \"const fs = require('fs'); const path = require('path'); const out = path.resolve('dist'); if (fs.existsSync(out)) fs.rmSync(out, { recursive: true, force: true });\"",
+    "dev": "vite",
+    "build": "npm run clean && vite build",
+    "preview": "vite preview",
+    "test:pipeline": "node tests/test_pipeline.cjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.474",
+    "@remotion/lottie": "^4.0.474",
+    "@remotion/player": "^4.0.474",
+    "@types/file-saver": "^2.0.7",
+    "cheerio": "^1.2.0",
+    "clsx": "2.1.1",
+    "file-saver": "^2.0.5",
+    "jsdom": "^29.1.1",
+    "jszip": "^3.10.1",
+    "lottie-react": "^2.4.1",
+    "lucide-react": "^1.17.0",
+    "mammoth": "^1.12.0",
+    "pdfjs-dist": "^5.6.205",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "remotion": "^4.0.474",
+    "tailwind-merge": "3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.17",
+    "@types/node": "22.19.17",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.1",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3",
+    "vite": "7.3.2",
+    "vite-plugin-singlefile": "2.3.0"
+  }
+}
